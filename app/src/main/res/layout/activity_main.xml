@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <fragment
+           android:id="@+id/listFragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.tahir70108.carshowroom.listFragment"
+
+            tools:layout="@layout/fragment_list">
+
+        </fragment>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/buttonsFragment"
+            android:layout_weight="1"
+            android:name="com.tahir70108.carshowroom.buttonFragment"
+            tools:layout="@layout/fragment_button">
+
+        </fragment>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:id="@+id/carInforFragment"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:name="com.tahir70108.carshowroom.carInforFragment"
+            tools:layout="@layout/fragment_car_infor">
+
+        </fragment>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:name="com.tahir70108.carshowroom.OwnerInforFragment"
+            android:id="@+id/OwnerInforFrag"
+
+            tools:layout="@layout/fragment_owner_infor">
+
+        </fragment>
+
+
+    </LinearLayout>
+</LinearLayout>
